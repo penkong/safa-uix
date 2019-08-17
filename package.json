@@ -3,6 +3,7 @@
     "version": "0.1.1",
     "description": "npm package for add reusable layer to quasar for safa company.",
     "main": "dist/safa-uix.js",
+    "module": "dist/index.es.js",
     "engines": {
         "node": ">= 7.0"
     },
@@ -31,8 +32,9 @@
         "doc",
         "lang",
         "lib",
+        "schemas",
         "src",
-        "test"
+        "vendor"
     ],
     "keywords": [
         "safa",
