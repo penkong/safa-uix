@@ -2,34 +2,41 @@
     "name": "safa-uix",
     "version": "1.0.0",
     "description": "reusable api on top of quasar.",
-    "main": "./src/index.js",
+    "main": "dist/safa-uix.js",
+    "engines": {
+        "node": ">= 7.0"
+    },
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "dev": "babel-node build/local",
+        "build": "rm -rf dist/ && babel-node build/lib",
+        "docs": "babel-node build/docs",
+        "lint": "eslint --ext .js,.vue docs src build test",
+        "test": "jest",
+        "coverage": "yarn test --coverage",
+        "githooks": "sh build/git-hooks/install.sh",
+        "changelog": "babel-node build/generate-changelog.js",
+        "release": "sh build/release.sh",
+        "new-component": "babel-node build/new-component.js",
+        "github-release": "github-release",
+        "commit": "git-cz"
     },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/penkong/safa-uix.git"
-    },
-    "keywords": [
-        "safa",
-        "quasar",
-        "framework"
-    ],
-    "author": "nazemi-safa",
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/penkong/safa-uix/issues"
-    },
-    "homepage": "https://github.com/penkong/safa-uix#readme",
-    "dependencies": {
+    "dependencies": {},
+    "devDependencies": {
         "quasar": "^1.0.5"
     },
+    "peerDependencies": {},
+    "optionalDependencies": {},
     "files": [
         "dist",
+        "doc",
         "lang",
-        "src"
+        "lib",
+        "src",
+        "test"
     ],
     "keywords": [
+        "safa",
+        "framework",
         "vuejs",
         "vue",
         "quasar",
@@ -42,4 +49,17 @@
         "website",
         "electron"
     ],
+    "author": {
+        "name": "nazemi-safa",
+        "email": "nazemi.works@gmail.com"
+    },
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/penkong/safa-uix/issues"
+    },
+    "homepage": "https://github.com/penkong/safa-uix#readme",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/penkong/safa-uix.git"
+    }
 }
