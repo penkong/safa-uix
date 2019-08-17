@@ -1,0 +1,45 @@
+{
+    "name": "safa-uix",
+    "version": "1.0.0",
+    "description": "reusable api on top of quasar.",
+    "main": "./src/index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/penkong/safa-uix.git"
+    },
+    "keywords": [
+        "safa",
+        "quasar",
+        "framework"
+    ],
+    "author": "nazemi-safa",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/penkong/safa-uix/issues"
+    },
+    "homepage": "https://github.com/penkong/safa-uix#readme",
+    "dependencies": {
+        "quasar": "^1.0.5"
+    },
+    "files": [
+        "dist",
+        "lang",
+        "src"
+    ],
+    "keywords": [
+        "vuejs",
+        "vue",
+        "quasar",
+        "js",
+        "phone",
+        "tablet",
+        "desktop",
+        "spa",
+        "pwa",
+        "website",
+        "electron"
+    ],
+}
