@@ -1,0 +1,24 @@
+language: node_js
+
+node_js:
+  - '11.7'
+
+dist: trusty
+
+services:
+  - quasar
+# env var when run on ci server
+env:
+  - NODE_ENV=ci PORT=3000
+
+cache:
+  directories:
+    - node_modules
+
+# to get our project ready
+install:
+  - npm install
+  - npm run build
+
+script:
+  - npm run test
