@@ -1,7 +1,7 @@
 {
     "name": "safa-uix",
-    "version": "1.0.0",
-    "description": "reusable api on top of quasar.",
+    "version": "0.1.0",
+    "description": "npm package for add reusable layer to quasar for safa company.",
     "main": "dist/safa-uix.js",
     "engines": {
         "node": ">= 7.0"
