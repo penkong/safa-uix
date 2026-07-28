@@ -23,7 +23,7 @@
     },
     "dependencies": {},
     "devDependencies": {
-        "quasar": "^1.0.5"
+        "quasar": "^2.22.0"
     },
     "peerDependencies": {},
     "optionalDependencies": {},
